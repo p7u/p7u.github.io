@@ -2,7 +2,7 @@
 layout: post
 title:  "Using Facelets technology to create custom composite components (part I)"
 date:   2013-04-30 17:36:10
-categories: jekyll update
+categories: [facelets, jsf]
 ---
 
 This article presents an approach that can be followed to create custom facelets components that generalize some ‘basic’ 
