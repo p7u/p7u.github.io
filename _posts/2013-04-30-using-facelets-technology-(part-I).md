@@ -27,7 +27,7 @@ here.
 The first part of this article concentrates on demonstrating the usage of the Facelets technology to create a custom 
 component that looks and behaves like a tabbed panel. 
 
-![picture with tabbed panel](/assets/facelets_pic_2.png)
+![picture with tabbed panel](/images/facelets_pic_2.png)
 
 The following code example will be based on IceFaces’ tag used for creating tabbed panels, the ice:panelTabSet. The JSF 
 specification does not offer such component. This component lets you build as many tabs as you want by nesting 

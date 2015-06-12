@@ -10,7 +10,7 @@ create a custom Facelets component that behaves like a tabbed panel.
 
 This part discusses the creation of a custom table that supports adding any kind of composite columns.
 
-![picture](/assets/facelets_pic_1.png)
+![picture](/images/facelets_pic_1.png)
 
 As you see in the picture, the particularities of this table are the first column, which is made of checkboxes, and the 
 last one, made of drop-downs. So, can we build a custom facelet component that can allow something like this?
