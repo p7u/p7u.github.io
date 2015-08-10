@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Title coming up soon
+title:            Răzvan Petruescu
 locale:           en_US
 url:
 
@@ -29,17 +29,17 @@ owner:
   name: Răzvan Petruescu
   avatar: front-for-cv.jpg
   bio: "Bio coming up soon"
-  email: 
+  email:
   disqus-shortname: razvan_petruescu
   twitter: razvanpetruescu
   facebook: #username
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: RazvanPetruescu
   stackoverflow: 1557686/razvan-petruescu
   linkedin: razvanpetruescu
