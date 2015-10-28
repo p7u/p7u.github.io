@@ -1,7 +1,7 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Functional programming for the masses"
+tags: [functional, programming, scala, clojure, haskell, f#]
 image:
   feature: programming-wallpaper-1152x720.jpg
   #credit: WeGraphics
