@@ -27,7 +27,7 @@ kramdown:
 # Site owner
 owner:
   name: Răzvan Petruescu
-  avatar: front-for-cv.jpg
+  avatar: RP.png
   bio: "Functional programming for the masses"
   email:
   disqus-shortname: blog-petruescu
