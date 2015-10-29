@@ -3,9 +3,10 @@ layout: post
 title:  "Using Facelets technology to create custom composite components (part II)"
 date:   2013-05-01 17:36:10
 categories: [programming, jsf]
+comments: true
 ---
 
-The [first part]({% post_url 2013-04-30-using-facelets-technology-(part-I) %}) of this article presented an approach to 
+The [first part]({% post_url 2013-04-30-using-facelets-technology-(part-I) %}) of this article presented an approach to
 create a custom Facelets component that behaves like a tabbed panel.
 
 This part discusses the creation of a custom table that supports adding any kind of composite columns.
