@@ -128,7 +128,7 @@ Another way to visualize this relationship is that the direction of conformance
 (or assignment) is the same as the inheritance arrow, as depicted in the
 following picture.
 
-(/images/scala-invariance-covariance-pic.png)
+![](/images/scala-invariance-covariance-pic.png)
 
 Therefore, the following statement would compile:
 `val v: Source[Event] = new UserEventSource()`
