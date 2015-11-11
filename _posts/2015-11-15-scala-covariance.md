@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "On Types and Type Systems with Scala (part II)"
+title:  "On Types and Type Systems with Scala: Variance (part II)"
 date:   2015-11-15 00:00:00
-excerpt: "Covariance with Scala"
+excerpt: "A glimpse into Covariance"
 tags: [type system, scala, functional, covariance]
 categories: [programming, types]
 comments: true
@@ -10,15 +10,15 @@ comments: true
 
 > Introduction
 
-In the [first part](correct link here) of this series, I started by examining
-the concept of variance and introduced invariance.
+In the [first part]({% post_url 2015-11-01-scala-types-invariance %}) of the
+series, I started by examining the concept of variance and introduced invariance.
 
 This article describes another form of variance, namely, covariance.
 
 > Example
 
 Nothing serves the presentation of new concepts better than examples, therefore
-I will continue with a fictional concrete scenario.
+I will continue with a concrete scenario.
 
 Imagine an event-driven software system. Such a system is based on broad
 categories of events, like events related to the functioning of the system
@@ -40,13 +40,13 @@ trait ErrorEvent extends ApplicationEvent
 
 {% endhighlight %}
 
-As stated [earlier](correct link here), traits in Scala are a way to define
-types.
+As stated [earlier]({% post_url 2015-11-01-scala-types-invariance %}), traits in
+Scala are a way to define types.
 
-Since there can be many types of events it would make sense to declare separate
-event sources for each type. An event source will inherit from a generic trait,
-`Source`, that is parameterized. Also, design decisions have led to making the
-type parameter covariant. A covariant type parameter is created by marking the
+Since there can be many categories of events it would make sense to create
+separate event sources for each type. An event source will inherit from a generic
+trait, `Source`, that is parameterized. Also, design decisions have led to making
+the type parameter covariant. A covariant type parameter is created by marking the
 parametrized type with `+`.
 
 {% highlight scala %}
@@ -77,7 +77,7 @@ val syes = new SystemEventSource {
 
 In reality there should be more event sources in the system. In this fictional
 example, an `UserEventSource` and a `SystemEventSource` are all that is needed.
-Note also that actual implementations are omitted (by using the `???`).
+Note also that actual implementations are omitted (by using the `???` symbol).
 
 At some point, our requirements dictate that we need to intercept and forward
 events to another parts of our system, which are interested in those events (in
@@ -117,9 +117,10 @@ How is this possible?
 Covariance refers to the possibility to substitute a type parameter with its
 subtype. Accordingly, covariance can be depicted as a 'narrowing' relationship.
 
-By relaxing the [invariance](correct link here) constraint, both
-`Source[UserEvent] (UserEventSource)` and `Source[SystemEvent] (SystemEventSource)`
-become equivalent to `Source[Event]` and thus accepted by the compiler.
+By relaxing the [invariance]({% post_url 2015-11-01-scala-types-invariance %})
+constraint, both `Source[UserEvent] (UserEventSource)` and `Source[SystemEvent]
+(SystemEventSource)` become equivalent to `Source[Event]` and thus accepted by
+the compiler.
 
 A more formal definition would be that, for any types `T`, `A` and `B` if `T[B]`
 conforms (or is assignable) to `T[A]` then `B` is a sub-type of `A`.
