@@ -115,24 +115,29 @@ parameters to the method.
 How is this possible?
 
 Covariance refers to the possibility to substitute a type parameter with its
-subtype. Accordingly, covariance can be depicted as a 'narrowing' relationship.
+subtype.
+
+Even more, the covariance annotation makes it possible to create a type
+hierarchy between parameterized types that is parallel to the type hierarchy of
+the types used as parameters.
 
 By relaxing the [invariance]({% post_url 2015-11-01-scala-types-invariance %})
 constraint, both `Source[UserEvent] (UserEventSource)` and `Source[SystemEvent]
-(SystemEventSource)` become equivalent to `Source[Event]` and thus accepted by
-the compiler.
+(SystemEventSource)` become subtypes of `Source[Event]` and thus are accepted by
+the compiler. Therefore, covariance can also be thought of as a 'narrowing'
+relationship, since types are 'narrowed' from more generic to more specific.
 
-A more formal definition would be that, for any types `T`, `A` and `B` if `T[B]`
-conforms (or is assignable) to `T[A]` then `B` is a sub-type of `A`.
-
-Another way to visualize this relationship is that the direction of conformance
-(or assignment) is the same as the inheritance arrow, as depicted in the
-following picture.
+In the current situation, the direction of inheritance between parameterized
+types like, `Source[UserEvent]` and `Source[Event]` is the same as the direction
+of inheritance between `UserEvent` and `Event`, as depicted in the following
+diagram.
 
 ![](/images/scala-invariance-covariance-pic.png)
 
-Therefore, the following statement would compile:
-`val v: Source[Event] = new UserEventSource()`
+Hence the name, covariance.
+
+Conformance follows the direction of inheritance, therefore, the
+following statement would compile: `val v: Source[Event] = new UserEventSource()`
 
 In case of inheritance, covariance allows subclasses to override and use
 narrower (or more specific) types than their superclass in covariant positions
@@ -141,4 +146,5 @@ as the return value.
 > Closing remarks
 
 This article explained and demonstrated covariance via a practical example. The
-next part will discuss contravariance, and introduce a new concept, type bounds.
+next part will discuss discuss another incarnation of variance, namely,
+contravariance.
