@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "On Types and Type Systems (part I)"
+title:  "On Types and Type Systems with Scala: Variance (part I) > Types & Invariance"
 date:   2015-11-01 00:00:00
-excerpt: "Types,  Type Systems and Invariance with Scala"
+excerpt: "Types,  type systems and invariance with Scala"
 tags: [type system, scala, functional, variance]
 categories: [programming, types]
 comments: true
