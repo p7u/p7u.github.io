@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Types and Type Systems with Scala: Variance (part II)"
+title:  "On Types and Type Systems with Scala: Variance (part II) > Covariance"
 date:   2015-11-15 00:00:00
 excerpt: "A glimpse into Covariance"
 tags: [type system, scala, functional, covariance]
@@ -45,9 +45,9 @@ Scala are a way to define types.
 
 Since there can be many categories of events it would make sense to create
 separate event sources for each type. An event source will inherit from a generic
-trait, `Source`, that is parameterized. Also, design decisions have led to making
-the type parameter covariant. A covariant type parameter is created by marking the
-parametrized type with `+`.
+trait, `Source`, that is parameterized. Also, the programmers have decided to
+make the type parameter covariant. A covariant type parameter is created by
+marking the parametrized type with `+`.
 
 {% highlight scala %}
 
@@ -77,7 +77,8 @@ val syes = new SystemEventSource {
 
 In reality there should be more event sources in the system. In this fictional
 example, an `UserEventSource` and a `SystemEventSource` are all that is needed.
-Note also that actual implementations are omitted (by using the `???` symbol).
+Note also that the actual implementations are omitted (by using the `???`
+symbol).
 
 At some point, our requirements dictate that we need to intercept and forward
 events to another parts of our system, which are interested in those events (in
