@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Types and Type Systems with Scala: Variance (part I) > Types & Invariance"
+title:  "A deep dive into Scala's type system: Variance (part I) > Types & Invariance"
 date:   2015-11-01 00:00:00
 excerpt: "Types,  type systems and invariance with Scala"
 tags: [type system, scala, functional, variance]
@@ -8,7 +8,7 @@ categories: [programming, types]
 comments: true
 ---
 
-> Introduction
+#### Introduction
 
 This is the first article in a series that will examine, as the title suggests,
 concepts and ideas that are related to types and type systems.
@@ -21,7 +21,7 @@ For getting the most out of the article, basic familiarity with Scala's syntax
 is required. Also object-oriented concepts like inheritance, subtyping or
 polymorphism should not be foreign.
 
-> Types
+#### Types
 
 Computer programming theory defines a type as a means of classification identifying
 an abstract concept, along with additional characteristics like the operations that
@@ -41,7 +41,7 @@ Many programming languages allow the programmer to create types. Sometimes these
 types denote abstractions in the problem domain. And most of the times these
 types are aggregates of other types.
 
-> The type system
+#### The type system
 
 A type becomes an essential property that is used by the compiler to determine
 the correctness of your code.
@@ -60,7 +60,7 @@ compiler will not accept any programs that violate type restrictions. In Scala,
 the way to define a type is by either defining a class, an object or by using
 the `type` keyword directly.
 
-> Type parametrization
+#### Type parametrization
 
 Type parameters allow you to define methods or types in terms of another type(s).
 A type parameter is a type definition that’s taken in as a parameter when
@@ -105,7 +105,7 @@ val stringBox = new Box[String] {
 
 {% endhighlight %}
 
-> Variance
+#### Variance
 
 So what makes type parameters useful and interesting?
 
@@ -128,7 +128,7 @@ system.
 For this part I will focus only on invariance, leaving the other two forms for
 the next articles.
 
-> Invariance
+#### Invariance
 
 Invariance refers to the unchanging nature of the type parameter.
 Formally, if a type is invariant, then, assuming existing types `T`, `A`, `B`,
@@ -166,12 +166,12 @@ As noted, the method call `packFurnitureIntoBox(bBox)` will not be allowed by
 the compiler.
 
 The reason is straightforward. Imagine the `Box` type was not invariant. Then an
-unsuspecting programmer could try to pack furniture in book boxes, as the example
-underlines.
+unsuspecting programmer could try to pack furniture in book boxes, as the
+example underlines.
 
-> Closing remarks
+#### Closing remarks
 
 In the next article I will demonstrate that it's actually possible to relax the
-restriction placed upon the type `Box` (by making it invariant), I will discuss
-the forces that could lead to such a venture, and of course I will also
-clarify things with an example.
+invariance restriction placed upon the type `Box`, I will discuss the forces
+that could lead to such a venture, and of course I will also clarify things with
+an example.
