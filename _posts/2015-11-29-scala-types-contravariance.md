@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A deep dive into Scala's type system: Variance (part III) > Contravariance"
-date:   2015-11-30 00:00:00
+date:   2015-11-29 00:00:00
 excerpt: "Contravariance is the opposite of Covariance"
 tags: [type system, scala, functional, contravariance]
 categories: [programming, types]
@@ -27,7 +27,7 @@ register/process the events generated in the system. They will create a trait,
 `Sink`, that is used to mark components in need to be notified when an event has
 been fired.
 
-As a consequence of marking the type parameter with the `-` symbol, the `Sink` 
+As a consequence of marking the type parameter with the `-` symbol, the `Sink`
 type became contravariant.
 
 {% highlight scala %}
