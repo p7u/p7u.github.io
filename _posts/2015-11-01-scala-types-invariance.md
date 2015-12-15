@@ -8,14 +8,16 @@ categories: [programming, types]
 comments: true
 ---
 
-#### Introduction
-
 This is the first article in a series that will examine, as the title suggests,
-concepts and ideas that are related to types and type systems.
+Scala's type system, and, as a secondary concern, concepts and ideas that are
+related to types and type systems.
 
 The best way to emphasize theoretical notions is to give examples.
-Accordingly, I chose the Scala programming language as the instrument for this
-endeavor.
+Accordingly, I chose the Scala as the instrument for this endeavor.
+
+According to the [official website](http://www.scala-lang.org/), Scala is a
+"general purpose programming language designed to express common programming
+patterns in a concise, elegant, and type-safe way".
 
 For getting the most out of the article, basic familiarity with Scala's syntax
 is required. Also object-oriented concepts like inheritance, subtyping or
