@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "On architecture and design : Scala : Typeclasses (pt I)"
+title:  "On architecture and design : Scala : Type classes (pt I)"
 date:   2015-12-13 00:00:00
-excerpt: "Why typeclasses are needed"
-tags: [scala, typeclasses]
+excerpt: "Why type classes are needed"
+tags: [scala, type classes]
 categories: [programming, design]
 comments: true
 ---
@@ -14,7 +14,7 @@ patterns, idioms that will increase the quality of software.
 Naturally, I will dive into concepts like modularity, extensibility, design but
 also architectural patterns will be scrutinized.
 
-As a first task, I chose to look into Typeclasses and chose Scala as an
+As a first task, I chose to look into type classes and chose Scala as an
 instrument to facilitate my endeavor.
 
 According to the [official website](http://www.scala-lang.org/), Scala is a
