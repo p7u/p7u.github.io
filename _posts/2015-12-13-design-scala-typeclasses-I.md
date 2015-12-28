@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On architecture and design : Scala : Type classes (pt I)"
+title:  "On software design : Scala : Type classes (pt I)"
 date:   2015-12-13 00:00:00
 excerpt: "Why type classes are needed"
 tags: [scala, type classes]
