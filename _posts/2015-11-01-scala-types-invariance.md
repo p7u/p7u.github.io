@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A deep dive into Scala's type system: Variance (part I) > Types & Invariance"
+title:  "A deep dive into Scala's type system : Variance (part I) : Types & Invariance"
 date:   2015-11-01 00:00:00
-excerpt: "Types,  type systems and invariance with Scala"
+excerpt: "Types, type systems and invariance with Scala"
 tags: [type system, scala, functional, variance]
 categories: [programming, types]
 comments: true
