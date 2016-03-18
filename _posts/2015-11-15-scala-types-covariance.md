@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "A deep dive into Scala's type system: Variance (part II) > Covariance"
+title:  "A deep dive into Scala's type system : Variance (part II) : Covariance"
 date:   2015-11-15 00:00:00
 excerpt: "A glimpse into Covariance"
 tags: [type system, scala, functional, covariance]
 categories: [programming, types]
 comments: true
 ---
-
-#### Introduction
 
 In the [first part]({% post_url 2015-11-01-scala-types-invariance %}) of the
 series, I started by examining the concept of variance and introduced invariance.

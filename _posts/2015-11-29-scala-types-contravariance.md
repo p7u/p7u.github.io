@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A deep dive into Scala's type system: Variance (part III) > Contravariance"
+title:  "A deep dive into Scala's type system : Variance (part III) : Contravariance"
 date:   2015-11-29 00:00:00
 excerpt: "Contravariance is the opposite of Covariance"
 tags: [type system, scala, functional, contravariance]

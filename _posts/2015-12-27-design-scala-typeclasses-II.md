@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On software design : Scala : Type classes (pt II)"
+title:  "On software design : Scala : Type classes (part II)"
 date:   2015-12-27 00:00:00
 excerpt: "Type classes in Scala and Haskell are amazing"
 tags: [scala, type classes, haskell]
