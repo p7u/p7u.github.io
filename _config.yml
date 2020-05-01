@@ -46,18 +46,17 @@ owner:
   bio: "Functional programming for the masses"
   email:
   disqus-shortname: blog-petruescu
-  twitter: razvanpetruescu
+  twitter: r_p7u
   facebook: #username
   google:
-    plus: RazvanPetruescu
     analytics: UA-69349190-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  bitbucket: razvan_petruescu
-  stackoverflow: 1557686/razvan-petruescu
-  linkedin: razvanpetruescu
+  bitbucket: p7u-public
+  stackoverflow: 1557686
+  linkedin: p7u
   #cv: OmXEYK
   coursera: 3ffd86bbc63900998ce794c1e5712b83
   xing: #username
